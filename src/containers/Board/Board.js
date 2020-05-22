@@ -31,7 +31,7 @@ const Board = (props) => {
     const winner = calculateWinner(gameState.squares);
     let status;
     if (winner) {
-        status = <span style={{ fontWeight: "bold" }}>{"Winner: " + winner}</span>;
+        status = <span style={{ fontWeight: "bold" }}>{"Winner is: " + winner}</span>;
     }
     else {
         status = "Next player: " + gameState.player;
